@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mental health</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Navabar -->
+        <nav class="nav-bar">
+            <div class="container">
+
+                <div class="navbar-wrapper">
+                    <div class="logo-part">
+                        <figure>
+                            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                        </figure>
+                        <div class="toggler">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+
+                    <div class="menu-part">
+                        <ul>
+                            <li><a href="#home" class="activee">Home</a></li>
+                            <li><a href="#achivement">Achivement</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#doctors">Doctors</a></li>
+                            <li><a href="#testimonial">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- #4a6649ab -->
+
+                    <div class="login-part">
+                        <ul>
+                            <li><a href="#" onclick="openModal('loginModal')">Login</a></li>
+                            <li><a href="#" onclick="openModal('signupModal')">Signup</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Login Modal -->
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+                        <h2>Login</h2>
+                        <input type="email" id="loginEmail" placeholder="Email" autocomplete="off">
+                        <input type="password" id="loginPassword" placeholder="Password" autocomplete="off">
+                        <button onclick="login()">Login</button>
+                    </div>
+                </div>
+
+                <!-- Signup Modal -->
+                <div id="signupModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('signupModal')">&times;</span>
+                        <h2>Signup</h2>
+                        <input type="email" id="signupEmail" placeholder="Email" autocomplete="off">
+                        <input type="password" id="signupPassword" placeholder="Password" autocomplete="off">
+                        <button onclick="signup()">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner" style="background-image: url(images/banner-img.png);" id="home">
+        <div class="overlay-banner">
+            <div class="container">
+                <div class="banner-wrapper-main">
+                    <div class="banner-content">
+                        <h1 data-aos="fade-up" data-aos-duration="700"
+                            data-aos-easing="cubic-bezier(0.68, -0.55, 0.27, 1.55)">We will help <br>
+                            you to improve <br>
+                            your mental health</h1>
+                        <p data-aos="fade-up" data-aos-duration="700" data-aos-delay="300"
+                            data-aos-easing="cubic-bezier(0.68, -0.55, 0.27, 1.55)">Eu sit proin amet quis malesuada
+                            vitae elit. Vel consectetur nibh <br> quis ullamcorper quis.
+                            Quam
+                            enim
+                            tortor, id sed</p>
+
+
+                        <div class="banner-btn-wrapper" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"
+                            data-aos-easing="cubic-bezier(0.68, -0.55, 0.27, 1.55)">
+
+                            <div class="banner-btn">
+                                <a href="https://www.peerlesshospital.com/doctor.php" class="univ-btn"
+                                    target="_blank">Get
+                                    Appointment</a>
+                            </div>
+
+                            <div class="banner-btn banner-btn-two">
+                                <a href="https://www.webmd.com/health-insurance/insurance-doctor-types" class="univ-btn"
+                                    target="_blank">Find Specialist</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <main>
+        <!-- Achivement-->
+        <section class="achivement" id="achivement">
+            <div class="container">
+                <div class="achivement-box-wrapper" data-aos="fade-up" data-aos-duration="500">
+                    <div class="box">
+                        <h2>24/7</h2>
+                        <p>Online Support</p>
+                    </div>
+                    <div class="box common-achivement-box">
+                        <h2>100+</h2>
+                        <p>Doctors</p>
+                    </div>
+                    <div class="box">
+                        <h2>1M+</h2>
+                        <p>Active Patients</p>
+                    </div>
+                    <div class="box common-achivement-box">
+                        <h2>5M+</h2>
+                        <p>interested</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service -->
+        <section class="service" id="service">
+            <div class="container">
+
+                <div class="service-heading-content" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                    data-aos-duration="500">
+                    <div class="service-heading-text">
+                        <h2>Our Services</h2>
+                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis. Quam
+                            enim
+                            tortor, id sed</p>
+                    </div>
+                </div>
+
+                <div class="service-card-wrapper">
+                    <div class=" card" data-aos="fade-right" data-aos-duration="800">
+                        <figure>
+                            <img src="images/card-img-1.png" alt="first-card-img">
+                        </figure>
+                        <div class="card-content">
+                            <h3>Counseling</h3>
+                            <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis.
+                                Quam
+                                enim tortor.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-down" data-aos-duration="800">
+                        <figure>
+                            <img src="images/card-img-2.png" alt="second-card-img">
+                        </figure>
+                        <div class="card-content">
+                            <h3>Support groups</h3>
+                            <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis.
+                                Quam enim tortor.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-left" data-aos-duration="800">
+                        <figure>
+                            <img src="images/card-img-3.png" alt="first-card-img">
+                        </figure>
+                        <div class="card-content">
+                            <h3>Prescription medicine</h3>
+                            <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis.
+                                Quam enim tortor.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-right" data-aos-duration="900">
+                        <figure>
+                            <img src="images/card-img-4.png" alt="four-card-img">
+                        </figure>
+                        <div class="card-content">
+                            <h3>Therapies</h3>
+                            <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis.
+                                Quam enim tortor.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration="900">
+                        <figure>
+                            <img src="images/card-img-5.png" alt="five-card-img">
+                        </figure>
+                        <div class="card-content">
+                            <h3>Brain stimulation</h3>
+                            <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis.
+                                Quam enim tortor.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" data-aos="fade-up-left" data-aos-duration="900">
+                        <figure>
+                            <img src="images/card-img-6.png" alt="six-card-img">
+                        </figure>
+                        <div class="card-content">
+                            <h3>Eye Movement</h3>
+                            <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis.
+                                Quam enim tortor.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- appointment -->
+        <section class="appointment" id="doctors">
+            <div class="container">
+                <div class="appointment-wrapper-main">
+                    <div class="appointment-text">
+                        <p data-aos="fade-up" data-aos-duration="700"
+                            data-aos-easing="cubic-bezier(0.68, -0.55, 0.27, 1.55)">Need a doctor’s counsealing?</p>
+                        <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                            data-aos-easing="cubic-bezier(0.68, -0.55, 0.27, 1.55)">Just make an appointment and
+                            motivated</h2>
+                        <div class="appointment-btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                            data-aos-easing="cubic-bezier(0.68, -0.55, 0.27, 1.55)">
+                            <a class="univ-btn" href="https://www.peerlesshospital.com/doctor.php" target="_blank">Get
+                                Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial  -->
+        <section class="Testimonial" id="testimonial">
+            <div class="container">
+                <div class="testimonial-heading-content-wrapper" data-aos="fade-up" data-aos-duration="500">
+                    <div class="Testimonial-text">
+                        <h2>What Our Client’s Say</h2>
+                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis. Quam
+                            enim
+                            tortor, id sed</p>
+                    </div>
+                </div>
+                <div class="testimonial-box-wrapper-main" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-delay="200">
+                    <div class="Testimonial-box-wrapper">
+                        <div class="owl-carousel" id="owlone">
+                            <div class="item">
+                                <div class="slides">
+
+                                    <div class="Testimonial-box">
+                                        <div class="reviewer-ratting-wrapper">
+                                            <div class="reviewer-dtls">
+                                                <figure>
+                                                    <img src="images/tst-img.png" alt="reviewer_img">
+                                                </figure>
+                                                <div>
+                                                    <h4>Floyd Miles</h4>
+                                                    <p>24 May, 2020</p>
+                                                </div>
+                                            </div>
+                                            <ul class="ratting">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+
+                                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis
+                                            ullamcorper quis. Quam
+                                            enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel consectetur
+                                            nibh
+                                            quis
+                                            ullamcorper
+                                            quis. Quam enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel
+                                            consectetur nibh
+                                            quis
+                                            ullamcorper quis. Quam enim tortor.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="slides">
+                                    <div class="Testimonial-box">
+                                        <div class="reviewer-ratting-wrapper">
+                                            <div class="reviewer-dtls">
+                                                <figure>
+                                                    <img src="images/adtiya.jpg" alt="reviewer_img">
+                                                </figure>
+                                                <div>
+                                                    <h4>Aditya Mondal</h4>
+                                                    <p>14 Sept, 2025</p>
+                                                </div>
+                                            </div>
+                                            <ul class="ratting">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+
+                                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis
+                                            ullamcorper quis. Quam
+                                            enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel consectetur
+                                            nibh
+                                            quis
+                                            ullamcorper
+                                            quis. Quam enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel
+                                            consectetur nibh
+                                            quis
+                                            ullamcorper quis. Quam enim tortor.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="slides">
+                                    <div class="Testimonial-box">
+                                        <div class="reviewer-ratting-wrapper">
+                                            <div class="reviewer-dtls">
+                                                <figure>
+                                                    <img src="images/suvojit.jpg" alt="reviewer_img">
+                                                </figure>
+                                                <div>
+                                                    <h4>Suvajit Mondal</h4>
+                                                    <p>14 Sept, 2025</p>
+                                                </div>
+                                            </div>
+                                            <ul class="ratting">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+
+                                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis
+                                            ullamcorper quis. Quam
+                                            enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel consectetur
+                                            nibh
+                                            quis
+                                            ullamcorper
+                                            quis. Quam enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel
+                                            consectetur nibh
+                                            quis
+                                            ullamcorper quis. Quam enim tortor.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="slides">
+                                    <div class="Testimonial-box">
+                                        <div class="reviewer-ratting-wrapper">
+                                            <div class="reviewer-dtls">
+                                                <figure>
+                                                    <img src="images/adti.jpg" alt="reviewer_img">
+                                                </figure>
+                                                <div>
+                                                    <h4>Aditi Mondal</h4>
+                                                    <p>14 Sept, 2025</p>
+                                                </div>
+                                            </div>
+                                            <ul class="ratting">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+
+                                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis
+                                            ullamcorper quis. Quam
+                                            enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel consectetur
+                                            nibh
+                                            quis
+                                            ullamcorper
+                                            quis. Quam enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel
+                                            consectetur nibh
+                                            quis
+                                            ullamcorper quis. Quam enim tortor.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="slides">
+                                    <div class="Testimonial-box">
+                                        <div class="reviewer-ratting-wrapper">
+                                            <div class="reviewer-dtls">
+                                                <figure>
+                                                    <img src="images/soumo.jpg" alt="reviewer_img">
+                                                </figure>
+                                                <div>
+                                                    <h4>Soumya Ghosh </h4>
+                                                    <p>14 Sept, 2020</p>
+                                                </div>
+                                            </div>
+                                            <ul class="ratting">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+
+                                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis
+                                            ullamcorper quis. Quam
+                                            enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel consectetur
+                                            nibh
+                                            quis
+                                            ullamcorper
+                                            quis. Quam enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel
+                                            consectetur nibh
+                                            quis
+                                            ullamcorper quis. Quam enim tortor.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="slides">
+                                    <div class="Testimonial-box">
+                                        <div class="reviewer-ratting-wrapper">
+                                            <div class="reviewer-dtls">
+                                                <figure>
+                                                    <img src="images/kousik.jpg" alt="reviewer_img">
+                                                </figure>
+                                                <div>
+                                                    <h4>Kousik Chanak</h4>
+                                                    <p>24 Sept, 2025</p>
+                                                </div>
+                                            </div>
+                                            <ul class="ratting">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+
+                                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis
+                                            ullamcorper quis. Quam
+                                            enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel consectetur
+                                            nibh
+                                            quis
+                                            ullamcorper
+                                            quis. Quam enim tortor. Eu sit proin amet quis malesuada vitae elit. Vel
+                                            consectetur nibh
+                                            quis
+                                            ullamcorper quis. Quam enim tortor.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reason -->
+        <section class="Reason">
+            <div class="container">
+                <div class="heading-contenet-wrapper" data-aos="fade-up" data-aos-duration="800">
+                    <div class="heading-content">
+                        <h2>Why Should you take our services</h2>
+                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis. Quam
+                            enim tortor, id sed
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reason-main-wrapper">
+                    <figure data-aos="fade-right" data-aos-duration="700">
+                        <img src=" images/Rectangle 15.png" alt="">
+                    </figure>
+                    <div class="right-part-content" data-aos="fade-left" data-aos-duration="700">
+                        <ul>
+                            <li><b>Experience <i class="fa-solid fa-circle-check"></i></b> <br> Eu sit proin amet quis
+                                malesuada vitae elit. Vel consectetur nibh
+                                quis
+                                ullamcorper quis.
+                                Quam enim tortor, id sed</li>
+
+                            <li><b>Experience <i class="fa-solid fa-circle-check"></i></b> <br> Eu sit proin amet quis
+                                malesuada vitae elit. Vel consectetur
+                                nibh
+                                quis
+                                ullamcorper quis.
+                                Quam enim tortor, id sed</li>
+
+                            <li><b>Experience <i class="fa-solid fa-circle-check"></i></b> <br> Eu sit proin amet quis
+                                malesuada vitae elit. Vel consectetur nibh
+                                quis
+                                ullamcorper quis.
+                                Quam enim tortor, id sed</li>
+                            <li><b>Experience <i class="fa-solid fa-circle-check"></i></b> <br> Eu sit proin amet quis
+                                malesuada vitae elit. Vel consectetur nibh
+                                quis
+                                ullamcorper quis.
+                                Quam enim tortor, id sed</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA   -->
+        <section class="cta" id="contact">
+            <div class="container">
+                <div class="cta-wrapper-main" data-aos="fade-left" data-aos-duration="700">
+                    <div class="left-part">
+                        <p>Need a doctor’s counsealing?</p>
+                        <h2>Request a Call Back
+                            Today Now</h2>
+                        <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis. Quam
+                            enim tortor, id sed</p>
+                        <div class="patient-details-wrapper">
+
+                            <div class="patient-img-wrapper">
+                                <figure>
+                                    <img src="images/patient-img.png" alt="patient-img">
+                                </figure>
+                                <figure class="second-paient-img">
+                                    <img src="images/Ellipse 7.png" alt="second-patient-img">
+                                </figure>
+                                <figure class="third-patient-img">
+                                    <img src="images/Ellipse 8.png" alt="third-patient-img">
+                                </figure>
+
+                            </div>
+                            <p>Our Doctors are waiting <br>
+                                for your service.</p>
+                        </div>
+                    </div>
+                    <form id="myForm" action="" class="right-part" onsubmit="return handleSubmit(event)">
+                        <input type="text" name="fullname" id="full_name" placeholder="Your name">
+                        <p class="user-error"></p>
+                        <input type="tel" name="num" id="phone" placeholder="Your phone number">
+                        <p class="phone-error"></p>
+                        <input type="date" name="date" id="date">
+                        <p class="date-error"></p>
+                        <input type="submit" value="Request Now">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-content-wrapper">
+                <div class="box first-box">
+                    <h5>oxcare</h5>
+                    <p>Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh quis ullamcorper quis. Quam
+                        enim
+                        tortor, id sed</p>
+                    <ul class="social-icon">
+                        <li><a href="https://www.facebook.com/mentalhealthfoundation/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/mental-health-always/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/mentalhealth/?hl=en" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://x.com/search?q=%23mentalhealth&src=typd" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#achivement">Achivement</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#testimonial">Testimonial</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="box second-last-box">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="https://www.who.int/health-topics/vaccines-and-immunization"
+                                target="_blank">Vaccination</a></li>
+                        <li><a href="https://nhm.gov.in/index1.php?lang=1&level=3&sublinkid=1454&lid=803"
+                                target="_blank">NDD</a></li>
+                        <li><a href="https://medlineplus.gov/ency/article/001956.htm" target="_blank">Filled
+                                Prescription As Is</a></li>
+                        <li><a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/patient-referral"
+                                target="_blank">Patient
+                                Referral</a></li>
+                        <li><a href="https://www.ntrca.com/post/supporting-the-people-who-build-mental-health-in-roofing#:~:text=Many%20roofing%20professionals%20deal%20with,fewer%20than%20half%20receive%20treatment."
+                                target="_blank">Other
+                                roofing</a></li>
+                    </ul>
+                </div>
+
+                <div class="box last-box">
+                    <h5>Location</h5>
+                    <ul>
+                        <li><a href="https://maps.app.goo.gl/WUcpFq5Q6pcEwvX46" target="_blank">2972 Westheimer Rd. <br>
+                                Santa Ana,
+                                Illinois <br> 85486 </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&#169 2025 All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="upper-up-btn-wrapper" id="scrollBtn">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
+
+
+    <!-- jQuery slidder -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- External Js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
